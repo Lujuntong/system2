@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.wrap{
+				position: relative;
+				overflow: hidden;
+			}
+			.box{
+				width: 100%;
+				height: 500%;
+				position: absolute;
+				top: 0;
+			}
+			.one{
+				width: 100%;
+				height: 20%;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="box">
+				<div class="one" style="background: red;"></div>
+				<div class="one" style="background: orangered;"></div>
+				<div class="one" style="background: yellow;"></div>
+				<div class="one" style="background: green;"></div>
+				<div class="one" style="background: blue;"></div>
+			</div>
+		</div>
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			// 设置宽高
+			var height=$(window).height()
+			var width=$(window).width()
+			$(".wrap").height(height)  //??/?
+			$(".wrap").width(width)
+			// 判断窗口变化时的宽高
+			$(window).resize(function(){
+				var height=$(window).height()
+				var width=$(window).width()
+				$(".wrap").height(height)
+				$(".wrap").width(width)
+				
+				// 向下滚动
+				var isRunning=false
+				var index=0
+				function scrollDown(){
+					if(!isRunning){
+						isRunning=true
+						setTimeout(function(){
+							isRunning=false;
+						},1000)
+						if(index<$(".one").length-1){
+							index++
+						}
+						$(".box").animate({"top":index*-100+"%"})
+					}
+				}
+				// 向上滚动
+				function scrollUp(){
+					if(!isRunning){
+						isRunning=true
+						setTimeout(function(){
+							isRunning=false;
+						},1000)
+						if(index>0){
+							index--
+						}
+						$(".box").animate({"top":index*-100+"%"})
+					}
+				}
+				function mouseWheel(ev){
+					if(ev.wheelDelta){
+						if(ev.wheelDelta>0){
+							scrollUp()
+						}else{
+							scrollDown()
+						}
+					}else{
+						if(ev.detail>0){
+							scrollDown()
+						}else{
+							scrollUp()
+						}
+					}
+				}
+				window.onmousewheel=mouseWheel
+				window.addEventListener("DOMMouseScroll",mouseWheel)
+			})
+		</script>
+	</body>
+</html>

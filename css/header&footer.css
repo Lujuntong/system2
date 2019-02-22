@@ -1,0 +1,138 @@
+.header{
+	width: 100%;
+	height: 120px;
+	background: url(../img/index/header_bg.jpg)no-repeat;
+	position: relative;
+	z-index: 999;
+}
+.inner{
+	width: 1100px;
+	margin: 0 auto;
+	position: relative;
+}
+.header-log{
+	float: left;
+}
+.nav{
+	width: 630px;
+	float: right;
+}
+.nav>ul>li{
+	float: left;
+	position: relative;
+}
+.nav>ul>li>a{
+	display: block;
+	padding: 0 17px 0 17px;
+	color: #fff;
+	line-height: 120px;
+	font-weight: 700;
+}
+.nav>ul>li>.nav-last{
+	padding: 0 0px 0 0px;
+}
+.nav-img{
+	vertical-align: middle;
+}
+.nav-hidden{
+	width: 180px;
+	background: #36264a;
+	position: absolute;
+	top: 85px;
+	left: 0px;
+	display: none;
+}
+.nav-hidden>ul>li{
+	width: 100%;
+	height: 40px;
+}
+.nav-hidden>ul>li>a{
+	display: block;
+	text-align: left;
+	line-height: 40px;
+	color: #fff;
+	margin-left: 30px;
+}
+.nav-hidden>ul>li:hover{
+	background:#3498db url(../img/index/nav_li_bg.png)no-repeat;
+	background-position: 160px 17px;
+}
+.dian{
+	width: 4px;
+	height: 4px;
+	background: url(../img/index/nav_now_bg.png)no-repeat;
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -2px;
+}
+.dian1{
+	display: none;
+}
+/* 底部 */
+.footer{
+	width: 100%;
+	height: 348px;
+	background: url(../img/index/yinyue_bg.jpg)no-repeat top center;
+}
+.music{
+	padding: 116px 0 0 276px;
+    height: 67px;
+}
+.music li{
+	float: left;
+    cursor: pointer;
+    width: 57px;
+    height: 57px;
+    margin-right: 26px;
+}
+.dou{
+	background: url(../img/index/yinyue_duo.png) no-repeat;
+}
+.dou:hover{
+	background-position: 0px -57px;
+}
+.lai{
+	background: url(../img/index/yinyue_lai.png) no-repeat;
+}
+.lai:hover{
+	background-position: 0px -57px;
+}
+.mi{
+	background: url(../img/index/yinyue_mi.png) no-repeat;
+}
+.mi:hover{
+	background-position: 0px -57px;
+}
+.fa{
+	background: url(../img/index/yinyue_fa.png) no-repeat;
+}
+.fa:hover{
+	background-position: 0px -57px;
+}
+.sou{
+	background: url(../img/index/yinyue_suo.png) no-repeat;
+}
+.sou:hover{
+	background-position: 0px -57px;
+}
+.la{
+	background: url(../img/index/yinyue_la.png) no-repeat;
+}
+.la:hover{
+	background-position: 0px -57px;
+}
+.xi{
+	background: url(../img/index/yinyue_xi.png) no-repeat;
+}
+.xi:hover{
+	background-position: 0px -57px;
+}
+.shengming{
+	border-top: 2px #9890a2 dashed;
+    text-align: center;
+    line-height: 65px;
+    margin-top: 159px;
+    color: #fff;
+    cursor: pointer;
+}

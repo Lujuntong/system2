@@ -1,0 +1,145 @@
+.wrap{
+	width: 100%;
+	background: #f1f2f6;
+}
+.title{
+	margin-top: 120px;
+	text-align: center;
+    color: #311759;
+}
+.title h1{
+	font-size: 54px;
+}
+.title h2{
+	font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 6px;
+}
+.content-title{
+	width: 0px;
+	height: 60px;
+	color: #311759;
+	font-size: 30px;
+	background: url(../images/pen_line_long.png)no-repeat bottom;
+	position: relative;
+	margin-bottom: 30px;
+}
+.liebiao{
+	color: #311759;
+	font-size: 30px;
+	padding-left: 30px;
+	font-weight: 700;
+}
+#itemHtml{
+	display: none;
+}
+.pen{
+	width: 61px;
+    height: 58px;
+    background: url(../images/pen_list.png) no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 7px;
+    cursor: pointer;
+}
+.content{
+	width: 100%;
+	padding-bottom: 50px;
+	position: relative;
+}
+.content-bottom{
+	width: 100%;
+	height: 30px;
+	background: url(../img/index/map_bottomimg.png)no-repeat bottom center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.big-box{
+	width: 1200px;
+	
+}
+.small-box{
+	width: 535px;
+    height: 240px;
+    float: left;
+    background: #fff;
+    padding: 36px 0 0 20px;
+    margin: 0 20px 30px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    position: relative;
+	overflow: hidden;
+}
+.sanjiao{
+	border: 8px solid #fff;
+	position: absolute;
+	top: 35px;
+  left: -20px;
+	border-color:#fff transparent  transparent  transparent ; 
+	transition:all 0.5s ease-in;
+}
+.small-box:hover{
+	border-color: #86759e;
+	transform: translateY(-6px);
+    transition: all 0.3s ease 0s;
+}
+.small-box:hover .sanjiao{
+	left: 50px;
+}
+.small-box-pic{
+	float: left;
+	height: 168px;
+    width: 260px;
+	background: yellow;
+	margin-right: 17px;
+}
+.small-box-pic img{
+	width: 100%;
+	height: 100%;
+}
+.small-box-text{
+	width: 221px;
+	float: left;
+}
+.small-box-title{
+	font-size: 20px;
+    color: #454548;
+    line-height: 26px;
+    max-height: 53px;
+    overflow: hidden;
+    padding-top: 15px;
+}
+.small-box-time{
+	color: #6b6a6f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-top: 2px;
+}
+.small-box-p{
+	padding-top: 8px;
+    color: #47464a;
+    line-height: 25px;
+    max-height: 85px;
+    overflow: hidden;
+    font-family: KaiTi_GB2312;
+    letter-spacing: 0px;
+	font-size: 15px;
+}
+.more{
+	width: 104px;
+	height: 170px;
+	margin: 30px auto;
+}
+.banner-btn{
+	height: 58px;
+    width: 58px;
+    background: url(../img/index/goOn_icon01.png) 0px 0px no-repeat;
+    margin: 10px auto 0;
+    cursor: pointer;
+}
+.banner-btn:hover{
+	background: url(../images/aboutxiaoniao/donext.png) 0px 0px no-repeat;
+
+}
